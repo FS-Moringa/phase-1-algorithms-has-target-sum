@@ -1,14 +1,57 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  function hasTargetSum(nums, target) {
+    const numSet = new Set(); 
+  
+    for (const num of nums) {
+      const difference = target - num;
+      if (numSet.has(difference)) {
+        
+        return true;
+      }
+      numSet.add(num); 
+    }
+  
+  
+    return false;
+  }
+  
 }
 
 /* 
   Write the Big O time complexity of your function here
 */
+function hasTargetSum(nums, target) {
+  const numSet = new Set(); 
+
+  for (const num of nums) {
+    const difference = target - num;
+    if (numSet.has(difference)) {
+      
+      return true;
+    }
+    numSet.add(num); 
+  }
+
+  
+  return false;
+}
 
 /* 
   Add your pseudocode here
 */
+function hasTargetSum(nums, target) {
+ const numSet = new Set();
+  for (const num of nums) {
+    const difference = target - num;
+    if (numSet.has(difference)) {.
+      return true;
+    }
+    numSet.add(num);
+  }
+
+  return false;
+}
 
 /*
   Add written explanation of your solution here
